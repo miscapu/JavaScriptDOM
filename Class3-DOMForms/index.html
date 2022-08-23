@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms controlled with DOM</title>
+</head>
+<body>
+
+    <h1>Forms controlled for DOM</h1>
+
+    <!-- Create form HTML with validations -->
+    <form method="post" name="myForm" action="/action_page.php" onsubmit="return validateForm()">
+        Name: <input type="text" name="fname">
+        <input type="submit" value="Submit">
+    </form>
+
+
+
+    <form>
+        <input type="text" id="number" name="number">
+        <button type="button" onclick="validateNumber()">Submit</button>
+    </form>
+    <p id="demo"></p>
+    <script src="script.js"></script>
+</body>
+</html>
